@@ -91,12 +91,12 @@ Entrega:
 
   - `200 OK:` Atualização bem-sucedida.
   - `400 Bad Request:` Dados inválidos.
-  - `404 Not Found:` Usuário não encontrado.
+  - `404 Not Found:` Tarefa não encontrado.
   - `500 Internal Server Error:` Erro no servidor.
 
 ### **DELETE /todos/{id}**
 
-- **Descrição:** Remove um usuário específico.
+- **Descrição:** Remove uma tarefa específico.
 - **Parâmetros:**
 
   - `id (obrigatório):` ID da tarefa.
