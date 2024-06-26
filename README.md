@@ -52,10 +52,7 @@ Entrega:
 
 #### **GET /todos**
 
-- **Descrição:** Retorna uma lista de usuários.
-- **Parâmetros:**
-
-  - `page` (opcional): Número da página para paginação.
+- **Descrição:** Retorna uma lista de tarefas.
 
 - **Códigos de Resposta:**
 
@@ -65,26 +62,30 @@ Entrega:
 
 ### **POST /todos**
 
-- **Descrição:** Cria um novo usuário.
+- **Descrição:** Cria uma nova tarefa.
 - **Parâmetros:**
 
-  - `name (obrigatório):` Nome do usuário.
-  - `email (obrigatório):` Email do usuário.
-
+  - `title (obrigatório):` Titulo da tarefa.
+  - `description (obrigatório):` Descrição da tarefa.
+  - `status (obrigatório):` O status da tarefa.
+  - `priority (obrigatório):` Prioridade da tarefa.
+  
 - **Códigos de Resposta:**
 
-  - `201 Created:` Usuário criado com sucesso.
+  - `201 Created:` Tarefa criada com sucesso.
   - `400 Bad Request:` Dados inválidos.
   - `500 Internal Server Error:` Erro no servidor.
 
 ### **PUT /todos**
 
-- **Descrição:** Atualiza as informações de um usuário específico.
+- **Descrição:** Atualiza as informações de uma tarefa específica.
 - **Parâmetros:**
 
-  - `id (obrigatório):` ID do usuário.
-  - `name (opcional):` Nome do usuário.
-  - `email (opcional):` Email do usuário.
+  - `id (obrigatório):` ID da tarefa.
+  - `title (opcional):` Titulo da tarefa.
+  - `description (opcional):` Descrição da tarefa.
+  - `status (opcional):` O status da tarefa.
+  - `priority (opcional):` Prioridade da tarefa.
 
 - **Códigos de Resposta:**
 
@@ -98,10 +99,10 @@ Entrega:
 - **Descrição:** Remove um usuário específico.
 - **Parâmetros:**
 
-  - `id (obrigatório):` ID do usuário.
+  - `id (obrigatório):` ID da tarefa.
 
 - **Códigos de Resposta:**
 
   - `200 OK:` Remoção bem-sucedida.
-  - `404 Not Found:` Usuário não encontrado.
+  - `404 Not Found:` Tarefa não encontrada.
   - `500 Internal Server Error:` Erro no servidor
